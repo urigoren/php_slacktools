@@ -15,7 +15,7 @@ Use from PHP
 
 Set up a mail checker slack bot:
 ---
-  1. Run `printf "include 'slack_tools.php';\nslack_mails()\n" > mailbot.php`
+  1. Run `printf "<?php\ninclude 'slack_tools.php';\nslack_mails();" > mailbot.php`
   1. Run `crontab -e` to start a new cronjob
   1. Add `*/5 * * * * php -c mailbot.php` to check for mails every 5 minutes
   1. Exit and save
